@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Lend: ordinary things, extraordinary neighbors. Borrow, give, help, sell, gather and look out for each other in Mountain House." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <title>Lend</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231ed760'/%3E%3Cpath d='M18 25h28l-7-7M46 39H18l7 7' fill='none' stroke='%23000' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  </head>
+  <body data-tab="home">
+    <div id="app" class="app" aria-busy="true">
+      <header class="top">
+        <span class="brand"><span class="brand-mark" data-icon="swap" data-size="17" data-stroke="2.6"></span><span class="brand-name">Lend</span></span>
+        <div class="top-center">
+          <button id="home-btn" class="round-btn" type="button" aria-label="Home" title="Home"><span data-icon="home" data-size="22" data-stroke="2"></span></button>
+          <label class="top-search">
+            <span data-icon="search" data-size="22" data-stroke="2.2"></span>
+            <input id="top-search" type="search" placeholder="What do you need?" aria-label="Search the neighborhood" autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+        </div>
+        <div class="top-right">
+          <span id="live" class="live" title="Live updates"><i></i><span>Live</span></span>
+          <button id="inbox-btn" class="round-btn ghost" type="button" aria-label="Inbox" title="Inbox"><span data-icon="inbox" data-size="20" data-stroke="2"></span><b class="badge" hidden></b></button>
+          <button id="compose-btn" class="compose-btn" type="button" aria-label="Post something"><span data-icon="plus" data-size="18" data-stroke="2.8"></span><span>Post</span></button>
+          <button id="me-btn" class="me-btn" type="button" aria-label="Your profile" title="Your profile"></button>
+        </div>
+      </header>
+
+      <aside id="library" class="library" aria-label="Your library"></aside>
+
+      <main class="panel">
+        <div id="view" class="view" tabindex="-1">
+          <div class="skeleton" aria-label="Loading the neighborhood">
+            <div class="sk sk-search"></div>
+            <div class="sk-quick"><i class="sk"></i><i class="sk"></i><i class="sk"></i><i class="sk"></i><i class="sk"></i><i class="sk"></i></div>
+            <div class="sk sk-banner"></div>
+            <div class="sk-shelf"><i class="sk"></i><i class="sk"></i><i class="sk"></i><i class="sk"></i><i class="sk"></i></div>
+          </div>
+        </div>
+      </main>
+
+      <section id="map-host" class="map-host" aria-label="Map of the neighborhood"></section>
+
+      <div id="nowbar" class="nowbar" role="button" tabindex="0" aria-label="Live in the neighborhood"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
